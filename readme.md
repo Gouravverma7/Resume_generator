@@ -103,7 +103,7 @@ Resume_Generator/
 ### 1️⃣ Clone the repo
 
 ```bash
-git clone <your-repo-url>
+git clone https://github.com/Gouravverma7/Resume_generator.git
 cd django_Cv_generator
 ```
 
@@ -167,3 +167,4 @@ Make sure `wkhtmltopdf` is installed on your system.
 
 **Gourav Verma** <br>
 Full Stack Developer and Data Science Enthusiast
+
