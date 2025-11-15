@@ -1,4 +1,4 @@
-from django.shortcuts import render, redirect
+from django.shortcuts import render, redirect, get_object_or_404
 from .models import Profile
 import pdfkit
 from django.http import HttpResponse
@@ -54,3 +54,9 @@ def resume(request,id):
 def list(request):
     profiles = Profile.objects.all()
     return render(request,'pdf/list.html',{'profiles':profiles})
+
+def delete(request,id):
+    user_profile = get_object_or_404(Profile, id=id)
+    user_profile.delete()
+    return redirect('resume-list') 
+    

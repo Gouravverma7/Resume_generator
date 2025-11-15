@@ -23,5 +23,6 @@ urlpatterns = [
     path('',views.home,name="home"),
     path('create-resume', views.accept,name='create_resume'),
     path('resume-list/',views.list,name="resume_list"),
-    path('<int:id>',views.resume,name='resume'),
+    path('<int:id>/',views.resume,name='resume'),
+    path('delete/<int:id>/',views.delete,name='delete')
 ]
